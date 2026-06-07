@@ -1,0 +1,72 @@
+.content {
+    padding: 30px 30px;
+}
+
+.content form {
+    width: 100%;
+    max-width: 100%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 14px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="tel"],
+.form-group input[type="date"],
+.form-group select,
+.form-group input[type="file"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #dcdfe6;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="number"]:focus,
+.form-group input[type="tel"]:focus,
+.form-group input[type="date"]:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #409eff;
+}
+
+.form-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+.form-group label[style*="display: inline"] {
+    display: inline !important;
+    font-weight: normal;
+    margin-right: 20px;
+}
+
+button[type="submit"] {
+    padding: 10px 24px;
+    background: #409eff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background: #3a8ee6;
+}

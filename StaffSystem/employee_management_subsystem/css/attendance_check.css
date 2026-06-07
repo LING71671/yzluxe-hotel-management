@@ -1,0 +1,163 @@
+.content {
+    padding: 30px 30px;
+}
+
+.content h2 {
+    color: #2c3e50;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 25px 0 15px;
+}
+
+.current-time {
+    font-size: 48px;
+    font-weight: bold;
+    color: #409eff;
+    text-align: center;
+    margin: 30px 0;
+    padding: 20px;
+    background: #f5f7fa;
+    border-radius: 8px;
+}
+
+.clock-section {
+    margin-bottom: 30px;
+}
+
+.clock-section .btn-group {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.adjustment-form {
+    background: #f5f7fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 14px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="date"],
+.form-group select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #dcdfe6;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="number"]:focus,
+.form-group input[type="date"]:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #409eff;
+}
+
+button {
+    padding: 10px 24px;
+    background: #409eff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.3s;
+    margin: 5px;
+}
+
+button:hover {
+    background: #3a8ee6;
+}
+
+.btn-warning {
+    background: #e6a23c;
+}
+
+.btn-warning:hover {
+    background: #d8932e;
+}
+
+.btn-success {
+    background: #67c23a;
+}
+
+.btn-success:hover {
+    background: #5daf34;
+}
+
+.btn-danger {
+    background: #f56c6c;
+}
+
+.btn-danger:hover {
+    background: #f55555;
+}
+
+.clock-btn {
+    margin-right: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: white;
+}
+
+table th,
+table td {
+    border: 1px solid #ebeef5;
+    padding: 12px 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+table th {
+    background: #fafafa;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+table td {
+    color: #606266;
+}
+
+table tr:hover {
+    background: #f5f7fa;
+}
+
+.status-normal {
+    color: #67c23a;
+    font-weight: bold;
+}
+
+.status-late {
+    color: #e6a23c;
+    font-weight: bold;
+}
+
+.status-early {
+    color: #f56c6c;
+    font-weight: bold;
+}
+
+.status-absent {
+    color: #909399;
+    font-weight: bold;
+}

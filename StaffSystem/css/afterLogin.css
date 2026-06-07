@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Microsoft YaHei", sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 320px;
+    display: flex;
+    background: #3e6e9e;
+    color: white;
+    height: 100vh;
+    flex-shrink: 0;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.sidebar-title {
+    text-align: center;
+    padding: 20px 0;
+    font-weight: bolder;
+    font-size: 20px;
+    border-bottom: 2px solid #3a4657;
+    flex-shrink: 0;
+}
+
+.menu {
+    list-style: none;
+    font-size: 20px;
+    padding: 0;
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: auto;
+}
+
+.menu > li {
+    padding: 0;
+}
+
+.menu > li > a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 18px;
+}
+
+.menu > li:hover {
+    background: #1f2d3d;
+}
+
+.menu > li .icon {
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.level2 {
+    list-style: none;
+    padding: 0;
+    background: #2d5a85;
+    display: none;
+}
+
+.level2.active {
+    display: block;
+}
+
+.level2 li {
+    padding: 0;
+}
+
+.level2 li > a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 12px 20px 12px 40px;
+    font-size: 16px;
+}
+
+.level2 li:hover {
+    background: #1f2d3d;
+}
+
+.level3 {
+    list-style: none;
+    padding: 0;
+    background: #254a6e;
+    display: none;
+}
+
+.level3.active {
+    display: block;
+}
+
+.level3 li {
+    padding: 0;
+}
+
+.level3 li > a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 12px 20px 12px 60px;
+    font-size: 15px;
+}
+
+.level3 li:hover {
+    background: #1f2d3d;
+}
+
+.has-submenu > a::after {
+    content: '▾';
+    float: right;
+    margin-left: 10px;
+}
+
+.has-submenu.open > a::after {
+    content: '▴';
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header {
+    background: white;
+    height: 60px;
+    border-bottom: 1px solid #ddd;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+#back {
+    background: #3e6e9e;
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding: 10px 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.2s ease;
+}
+
+#back:hover {
+    background: #2d5a85;
+}
+
+.header .user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.user-avatar {
+    font-size: 24px;
+}
+
+.iframe {
+    flex: 1;
+    border: none;
+    overflow: hidden;
+}
+
+#data {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.menu::-webkit-scrollbar {
+    display: none;
+}
+
+.menu {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

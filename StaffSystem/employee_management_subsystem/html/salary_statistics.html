@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Salary Statistics</title>
+    <link rel="stylesheet" href="../public/common.css">
+    <link rel="stylesheet" href="../css/salary_statistics.css">
+</head>
+<body>
+    <div class="main">
+        <div class="content">
+             <div class="header">
+                <h1>Salary Statistics & Reports</h1>
+             </div>
+
+            <div class="form-group">
+                <label for="statMonth">Month:</label>
+                <select id="statMonth">
+                    <option value="">Select Month</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="statDepartment">Department:</label>
+                <select id="statDepartment">
+                    <option value="all">All Departments</option>
+                </select>
+            </div>
+            <button onclick="generateSalaryStats()">Generate Statistics</button>
+            <button onclick="exportSalaryReport()">Export Report</button>
+
+            <div class="stats-cards" id="salaryStatsCards">
+                <div class="stat-card">
+                    <h3>Total Employees</h3>
+                    <div class="number" id="totalEmployees">0</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Total Salary</h3>
+                    <div class="number" id="totalSalary">0</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Average Salary</h3>
+                    <div class="number" id="avgSalary">0</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Highest Salary</h3>
+                    <div class="number" id="maxSalary">0</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Lowest Salary</h3>
+                    <div class="number" id="minSalary">0</div>
+                </div>
+            </div>
+
+            <h2>Salary Structure Analysis</h2>
+            <table id="salaryStructure">
+                <thead>
+                    <tr>
+                        <th>Component</th>
+                        <th>Amount</th>
+                        <th>Percentage</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+            <h2>Department Salary Summary</h2>
+            <table id="departmentSummary">
+                <thead>
+                    <tr>
+                        <th>Department</th>
+                        <th>Employee Count</th>
+                        <th>Total Salary</th>
+                        <th>Average Salary</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+            <h2>Detailed Salary Records</h2>
+            <table id="detailedSalary">
+                <thead>
+                    <tr>
+                        <th>Employee</th>
+                        <th>Department</th>
+                        <th>Base Salary</th>
+                        <th>Bonus</th>
+                        <th>Allowance</th>
+                        <th>Overtime</th>
+                        <th>Deduction</th>
+                        <th>Tax</th>
+                        <th>Net Salary</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+     <script src="../js/salary_statistics.js"></script>
+    <script>
+    document.body.style.overflowX = 'hidden';
+    document.documentElement.style.overflowX = 'hidden';
+    document.body.style.overflowY = 'auto';
+    document.documentElement.style.overflowY = 'auto';
+    </script>
+</body>
+</html>

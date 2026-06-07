@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Training Plans</title>
+    <link rel="stylesheet" href="../public/common.css">
+    <link rel="stylesheet" href="../css/view_training_plans.css">
+</head>
+<body>
+    <div class="main">
+        <div class="content">
+            <h1>View Training Plans</h1>
+             <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search by plan name, type, trainer, or location..." onkeyup="searchPlans()">
+                <button onclick="filterByStatus('all')" class="btn-secondary">All</button>
+                <button onclick="filterByStatus('Planned')" class="btn-secondary">Planned</button>
+                <button onclick="filterByStatus('Ongoing')" class="btn-secondary">Ongoing</button>
+                <button onclick="filterByStatus('Completed')" class="btn-secondary">Completed</button>
+            </div>
+
+            <table id="plansTable">
+                <thead>
+                    <tr>
+                        <th>Plan Name</th>
+                        <th>Type</th>
+                        <th>Trainer</th>
+                        <th>Location</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        <th>Time</th>
+                        <th>Participants</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="plansListContainer">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="../js/view_training_plans.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Salary Management</title>
+    <link rel="stylesheet" href="../public/common.css">
+    <link rel="stylesheet" href="../css/salary_management.css">
+</head>
+<body>
+ <div class="main">
+        <div class="content">
+            <h1>Salary Calculation</h1>
+            <div class="salary-form">
+                <div class="form-group">
+                    <label for="salaryEmployee">Employee:</label>
+                    <select id="salaryEmployee">
+                        <option value="">Select Employee</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="salaryMonth">Month:</label>
+                    <input type="month" id="salaryMonth">
+                </div>
+                <div class="form-group">
+                    <label for="baseSalary">Base Salary:</label>
+                    <input type="number" id="baseSalary" placeholder="e.g. 5000" min="0">
+                </div>
+                <div class="form-group">
+                    <label for="bonus">Bonus:</label>
+                    <input type="number" id="bonus" placeholder="e.g. 1000" min="0" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="allowance">Allowance:</label>
+                    <input type="number" id="allowance" placeholder="e.g. 500" min="0" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="overtimePay">Overtime Pay:</label>
+                    <input type="number" id="overtimePay" placeholder="Auto-calculated" min="0" value="0" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="deduction">Deduction:</label>
+                    <input type="number" id="deduction" placeholder="Auto-calculated" min="0" value="0" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="tax">Tax:</label>
+                    <input type="number" id="tax" placeholder="Auto-calculated" min="0" value="0" readonly>
+                </div>
+
+                <button class="btn-primary" onclick="calculateSalary()">Calculate Salary</button>
+                <button class="btn-secondary" onclick="saveSalary()">Save Salary Record</button>
+            </div>
+
+            <div class="salary-summary" id="salarySummary" style="display:none;">
+                <h2>Salary Summary</h2>
+                <div class="summary-item">
+                    <span>Base Salary:</span>
+                    <span id="summaryBase">0</span>
+                </div>
+                <div class="summary-item">
+                    <span>Bonus:</span>
+                    <span id="summaryBonus">0</span>
+                </div>
+                <div class="summary-item">
+                    <span>Allowance:</span>
+                    <span id="summaryAllowance">0</span>
+                </div>
+                <div class="summary-item">
+                    <span>Overtime Pay:</span>
+                    <span id="summaryOvertime">0</span>
+                </div>
+                <div class="summary-item">
+                    <span>Deduction:</span>
+                    <span id="summaryDeduction" style="color: #f44336;">0</span>
+                </div>
+                <div class="summary-item">
+                    <span>Tax:</span>
+                    <span id="summaryTax" style="color: #f44336;">0</span>
+                </div>
+                <div class="summary-item">
+                    <span>Net Salary:</span>
+                    <span id="summaryNet">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+   <script src="../js/salary_management.js"></script>
+</body>
+</html>
