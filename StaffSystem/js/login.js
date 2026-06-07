@@ -45,6 +45,7 @@ function checkP(){
     }
     return true; // 验证成功，返回 true
 }
-document.getElementById("login").addEventListener("submit",function (e) {
+document.getElementById("loginForm").addEventListener("submit", function (e) {
     e.preventDefault();
-})
+    handleLogin();
+});

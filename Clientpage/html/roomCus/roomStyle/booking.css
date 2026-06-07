@@ -20,7 +20,7 @@ nav li a[href="booking.html"] {
 .input-group label {
     font-size: 0.8rem;
     text-transform: uppercase;
-    color: var(#666666);
+    color: #666666;
     margin-bottom: 5px;
 }
 
