@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entertainment Management</title>
+    <title>Storeroom Management</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: Arial, sans-serif; background: #f4f7fb; color: #243447; padding: 34px; }
@@ -26,7 +26,7 @@
 </head>
 <body>
 <header>
-    <h1>Entertainment Management</h1>
+    <h1>Storeroom Management</h1>
     <nav>
         <a href="afterLogin.html">Home</a>
         <a href="Dashboard.html">Dashboard</a>
@@ -34,24 +34,26 @@
 </header>
 <section class="hero">
     <div class="hero-copy">
-        <h2>Guest leisure coordination</h2>
-        <p>Use this workspace to coordinate daily guest activities, venue readiness, and service handoffs with the same quiet operational style as the rest of the staff system.</p>
+        <h2>Supplies and service readiness</h2>
+        <p>Track hotel supplies, replenishment work, and housekeeping handoffs for guest-facing operations.</p>
     </div>
-    <img src="../../photo/staff.jpg" alt="Hotel staff service">
+    <img src="../../photo/staff.jpg" alt="Hotel service team">
 </section>
 <main class="grid">
     <section class="card">
-        <h2>Activity Schedule</h2>
-        <p>Track guest entertainment sessions, venue use, and daily activity arrangements.</p>
+        <h2>Room Supplies</h2>
+        <p>Coordinate bedding, toiletries, and room replenishment work.</p>
+        <a class="btn-primary" href="../roomWorker/system/service.html">Open Service</a>
+    </section>
+    <section class="card">
+        <h2>Dining Supplies</h2>
+        <p>Review restaurant demand and kitchen order support.</p>
+        <a class="btn-primary" href="../mealWorker/sys/order.html">Open Orders</a>
+    </section>
+    <section class="card">
+        <h2>Staff Handoff</h2>
+        <p>Keep purchase, housekeeping, and service teams aligned on daily needs.</p>
         <a class="btn-primary" href="afterLogin.html">Staff Home</a>
-    </section>
-    <section class="card">
-        <h2>Venue Readiness</h2>
-        <p>Review room setup, audio equipment, cleaning status, and staff handoff notes.</p>
-    </section>
-    <section class="card">
-        <h2>Guest Requests</h2>
-        <p>Collect entertainment service requests and coordinate follow-up with the service team.</p>
     </section>
 </main>
 <script src="../../shared/site-nav.js"></script>
